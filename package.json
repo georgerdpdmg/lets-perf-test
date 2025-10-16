@@ -2,7 +2,10 @@
   "name": "lets-perf-test",
   "version": "1.0.0",
   "main": "index.js",
-  "license": "MIT",
+  "license": "MOL",
+  "scripts": {
+    "start": "node v1.js"
+  },
   "dependencies": {
     "chrome-launcher": "^1.2.1",
     "lighthouse": "^13.0.0",
