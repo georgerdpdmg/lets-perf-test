@@ -64,11 +64,14 @@ async function runLighthouse(url, options = {}, config = null) {
   }
 }
 
-const urls = ['https://www.dailymail.co.uk/home/index.html', 'https://www.dailymail.co.uk/home/index.html?abv=off'];
+const URLS = [
+  'https://www.dailymail.co.uk/home/index.html',
+  'https://www.dailymail.co.uk/home/index.html?abv=off'
+];
 
 const runTask = async () => {
   cleanUp();
-  for (const url of urls) {
+  for (const url of URLS) {
     await runLighthouse(url, lhSettings);
   }
 };
